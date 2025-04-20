@@ -4,8 +4,15 @@ body {
 h1, h2, h3  {
   font-family: 'lato';
 }
+h2, .blue_date {
+  color: #17abb3;
+}
 * {
   font-family: 'raleway';
+}
+hr {
+  width: 80%;
+  border: 1px solid #33333311;
 }
 h1 {
   font-size: 2.5em;
@@ -14,16 +21,19 @@ h1 {
 a {
   text-decoration: none;
   color: #ffffff;
-  font-style: normal;
 }
 .container {
   width: 1160px;
   margin: auto;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 header, footer {
     background-color: #17abb3;
     color: #ffffff;
+    width: 100%;
 }
 header > a img{
     width: 150px;
@@ -35,14 +45,19 @@ header > a img{
 address img {
     width: 15px;
     height: 15px;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 header {
     display: flex;
     flex-direction: row; 
     justify-content: space-between;
     align-items: center;
-    padding: 30px 200px 30px 100px;
+    padding: 30px 200px 20px 100px;
+}
+header h2 {
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-top: 10px;
 }
 header div {
     display: flex;
@@ -57,4 +72,43 @@ header div address {
     justify-content: space-between;
     align-items: center;
     width: 220px;
+    font-size: 1em;
+    font-style: normal;
+}
+
+
+aside {
+    background-color: #e3e3e3;
+    width: 30%;
+}
+aside h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 20px 0 0 20px;
+}
+ul img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.ul_between {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+.ul_between li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li {
+    padding: 10px 0;
+}
+aside .label {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+aside ul {
+    list-style: square;
 }
