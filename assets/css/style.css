@@ -69,17 +69,21 @@ header div address {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 220px;
+    width: 250px;
     font-size: 1em;
     font-style: normal;
 }
-
+header div address a {
+    flex-basis: 50%;
+}
 
 aside {
     background-color: #e3e3e3;
     width: 30%;
+    box-sizing: border-box;
+    padding-top: 30px;
 }
 aside h2 {
     font-size: 1.5em;
@@ -103,7 +107,7 @@ ul img {
     justify-content: space-between;
 }
 li {
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 aside .label {
     font-size: 1.2em;
@@ -111,4 +115,34 @@ aside .label {
 }
 aside ul {
     list-style: square;
+}
+main{
+    width: 70%;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.p_profil {
+    text-indent: 50px;
+    text-align: justify;
+}
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+main ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.p_align_self {
+    align-self: flex-start;
+    flex-basis: 100%;
+}
+main ul li > h3, p {
+    margin: 0;
+    padding: 0;
 }
